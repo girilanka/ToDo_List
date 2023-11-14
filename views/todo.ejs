@@ -1,0 +1,46 @@
+<%-include("partials/header.ejs")%>
+        <h1 class="todo-title" >
+            Todo List
+        </h1>
+        <p class="left-gap">Organize Your Day: A Simple ToDo App for Productivity Bliss</p>
+
+        <form  class="add-tasks form-text" action="/" method="POST">
+            <input class="enter" type="text" name="addTask" placeholder="   Add Tasks here">
+            <input class="add" type="submit" value="ADD">
+        </form>
+        <% for(let i=0; i<locals.todoSize ; i++){ %>
+        <div class="container">
+            <div class="in-box">
+                <% if(locals.toDo){ %>
+                <p><%= locals.toDo[i] %></p>
+                <% } %>
+            </div>
+           
+            <form action="/complete" method="POST" >
+                <button  class=" size " name="complete" value="<%= i %>" >✅</button>
+            </form>
+            <form action="/delete" method="POST" >
+                <button  class=" size " name="delete" value="<%= i %>" >❌</button>
+            </form>
+            
+
+        </div>
+    <% } %>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+        <h1 class="center-text">Completed Tasks</h1>
+    <% for(let i=0; i<locals.completedSize ; i++){ %>
+        <div class="center-text completed-task">
+                <% if(locals.completed){ %>
+                <p><%= locals.completed[i] %> ✅</p>
+                <% } %>
+        </div>
+    <% } %>
+
+    
+        <%-include("partials/footer.ejs")%>
+
+    

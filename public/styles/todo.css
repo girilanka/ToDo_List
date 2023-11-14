@@ -1,0 +1,99 @@
+
+
+h1{
+    font-size:5rem;
+    
+}
+
+.todo-title{
+    padding-left:100px;
+}
+
+.left-gap{
+    padding-left:100px;
+    color:blue;
+}
+
+.add-tasks{
+    margin-left:18rem;
+    padding-top:1rem;
+    padding-bottom:2rem;
+    
+}
+
+.enter{
+    width:55rem;
+    height:3rem;
+    border:4px solid rgb(0,0,43);
+}
+
+.add{
+    color:white;
+    width:91px;
+    height:49px;
+    background-color: green;
+    font-size:28px;
+}
+
+.container{
+    height:3rem;
+    display:flex;
+    width:61rem;
+    gap:10px;
+    margin-top:20px;
+    border:1px solid black;
+    margin-left:18rem;
+    border-radius:9px;
+    background-color: rgb(2,127,255);
+}
+
+.in-box{
+    width:48rem;
+    height:48px;
+    font-size:2rem;
+    background-color: rgb(2,127,255);
+   
+}
+
+.size{
+    height:46px;
+    width:5rem;
+    border-radius:9px;
+    border:1px solid black;
+    font-size:30px; 
+    background-color: black;
+    margin-right:0px;
+}
+
+
+
+footer{
+    padding-top:3rem;
+    padding-bottom:2rem;
+}
+
+.completed-task{
+    font-size:2rem;
+    height:3rem;
+    width:61rem;
+    margin-top:20px;
+    border:1px solid green;
+    margin-left:18rem;
+    border-radius:9px;
+    background-color: rgb(2,160,97);
+}
+
+.center-text{
+    text-align:center;
+}
+
+.form-text{
+    font-size:25px;
+}
+
+
+
+
+
+
+
