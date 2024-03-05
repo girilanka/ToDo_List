@@ -91,6 +91,15 @@ footer{
     font-size:25px;
 }
 
+body,footer{
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+footer{
+    color:white;
+}
+
+
 
 
 
